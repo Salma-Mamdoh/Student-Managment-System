@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<University>
+  <Student ID="20210138">
+    <FirstName>Roaa</FirstName>
+    <LastName>Talat</LastName>
+    <Gender>Female</Gender>
+    <GPA>3.9</GPA>
+    <Level>4</Level>
+    <Address>El- Sheikh Zayed</Address>
+  </Student>
+  <Student ID="20210111">
+    <FirstName>S1</FirstName>
+    <LastName>L1</LastName>
+    <Gender>Male</Gender>
+    <GPA>3.9</GPA>
+    <Level>4</Level>
+    <Address>Egypt</Address>
+  </Student>
+  <Student ID="20210199">
+    <FirstName>S2</FirstName>
+    <LastName>L2</LastName>
+    <Gender>Male</Gender>
+    <GPA>4.0</GPA>
+    <Level>4</Level>
+    <Address>Giza</Address>
+  </Student>
+  <Student ID="20210133">
+    <FirstName>Test</FirstName>
+    <LastName>LastTest</LastName>
+    <Gender>Female</Gender>
+    <GPA>3.88</GPA>
+    <Level>4</Level>
+    <Address>El- Sheikh Zayed</Address>
+  </Student>
+</University>
