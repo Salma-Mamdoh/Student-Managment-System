@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <University>
-  <Student ID="20210162">
+  <Student ID="20210106">
+    <FirstName>t1</FirstName>
+    <LastName>l1</LastName>
+    <Gender>Female</Gender>
+    <GPA>4.0</GPA>
+    <Level>4</Level>
+    <Address>Egypt</Address>
+  </Student>
+  <Student ID="20210111">
     <FirstName>Salma</FirstName>
     <LastName>Sabry</LastName>
-    <Gender>Female</Gender>
-    <GPA>3.77</GPA>
+    <Gender>Male</Gender>
+    <GPA>3.0</GPA>
     <Level>4</Level>
     <Address>El- Sheikh Zayed</Address>
+  </Student>
+  <Student ID="20210132">
+    <FirstName>EEEEE</FirstName>
+    <LastName>TTTTTT</LastName>
+    <Gender>Male</Gender>
+    <GPA>3.99</GPA>
+    <Level>4</Level>
+    <Address>44</Address>
+  </Student>
+  <Student ID="20210133">
+    <FirstName>Salma</FirstName>
+    <LastName>TestUpdate</LastName>
+    <Gender>Male</Gender>
+    <GPA>4.0</GPA>
+    <Level>3</Level>
+    <Address>Egypt</Address>
   </Student>
   <Student ID="20210138">
     <FirstName>Roaa</FirstName>
@@ -16,6 +40,70 @@
     <Level>4</Level>
     <Address>El- Sheikh Zayed</Address>
   </Student>
+  <Student ID="20210155">
+    <FirstName>Walaa</FirstName>
+    <LastName>Ahmed</LastName>
+    <Gender>Female</Gender>
+    <GPA>3.0</GPA>
+    <Level>3</Level>
+    <Address>Egypt</Address>
+  </Student>
+  <Student ID="20210161">
+    <FirstName>Salma</FirstName>
+    <LastName>Sabry</LastName>
+    <Gender>Female</Gender>
+    <GPA>3.77</GPA>
+    <Level>4</Level>
+    <Address>El- Sheikh Zayed</Address>
+  </Student>
+  <Student ID="20210162">
+    <FirstName>SalmaFinal</FirstName>
+    <LastName>MamdohSabry</LastName>
+    <Gender>Female</Gender>
+    <GPA>3.7</GPA>
+    <Level>4</Level>
+    <Address>giza</Address>
+  </Student>
+  <Student ID="20210166">
+    <FirstName>test</FirstName>
+    <LastName>Sabry</LastName>
+    <Gender>Male</Gender>
+    <GPA>3.33</GPA>
+    <Level>3</Level>
+    <Address>october</Address>
+  </Student>
+  <Student ID="20210177">
+    <FirstName>Wallla</FirstName>
+    <LastName>Sabry</LastName>
+    <Gender>Male</Gender>
+    <GPA>4.0</GPA>
+    <Level>4</Level>
+    <Address>egypt</Address>
+  </Student>
+  <Student ID="20210188">
+    <FirstName>AddNewStudent</FirstName>
+    <LastName>AddNewStudentLastName</LastName>
+    <Gender>Male</Gender>
+    <GPA>3.5</GPA>
+    <Level>3</Level>
+    <Address>Zayed</Address>
+  </Student>
+  <Student ID="20210189">
+    <FirstName>Test</FirstName>
+    <LastName>LastTest</LastName>
+    <Gender>Male</Gender>
+    <GPA>3.9</GPA>
+    <Level>3</Level>
+    <Address>AddressTest</Address>
+  </Student>
+  <Student ID="20210199">
+    <FirstName>Name</FirstName>
+    <LastName>Last</LastName>
+    <Gender>Male</Gender>
+    <GPA>3.5</GPA>
+    <Level>3</Level>
+    <Address>Egypt</Address>
+  </Student>
   <Student ID="20210466">
     <FirstName>Yusef</FirstName>
     <LastName>Ehab</LastName>
@@ -23,13 +111,5 @@
     <GPA>2.9</GPA>
     <Level>4</Level>
     <Address>October</Address>
-  </Student>
-  <Student ID="20210133">
-    <FirstName>SS</FirstName>
-    <LastName>MM</LastName>
-    <Gender>Female</Gender>
-    <GPA>4.0</GPA>
-    <Level>4</Level>
-    <Address>Egypt</Address>
   </Student>
 </University>

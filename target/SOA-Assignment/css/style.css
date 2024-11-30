@@ -1,20 +1,30 @@
-/* General styling for body and container */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    height: 100vh;            /* Full viewport height */
 }
 
+/* Container styling */
 .container {
-    width: 80%;
-    max-width: 800px;
-    margin: 30px auto;
+    width: 100%;
+    max-width: 500px;  /* Adjusted width for better appearance */
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;     /* Increased padding for better spacing */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center the text inside */
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+    margin-bottom: 30px; /* Adds space below the title */
 }
 
 h2 {
@@ -22,95 +32,49 @@ h2 {
     color: #4CAF50;
 }
 
-form {
+/* Menu container - Flex for vertical stack and spacing */
+.menu {
     display: flex;
     flex-direction: column;
+    gap: 20px;           /* Adds space between buttons */
+    width: 100%;         /* Ensure buttons take full container width */
+    align-items: center; /* Center buttons horizontally */
 }
 
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input[type="text"], input[type="number"] {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* Button styles */
+/* Button styling */
 .button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    text-align: center;
     font-size: 16px;
-    margin-top: 15px;
+    text-align: center;
+    width: 100%;         /* Full width buttons */
+    max-width: 300px;    /* Limit button width */
 }
 
 .button:hover {
     background-color: #45a049;
 }
 
-/* Fieldset styling for student details form */
-fieldset {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-legend {
-    font-weight: bold;
-    color: #333;
-}
-
+/* Ensure anchor tags styled as buttons */
 a.button {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
+    display: block;        /* Make anchor a block-level element */
+    text-decoration: none; /* Remove underline */
+    text-align: center;    /* Center text inside the button */
+    width: 100%;           /* Button takes full width */
+    max-width: 300px;      /* Limit to 300px width */
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 auto;        /* Center the button horizontally */
 }
 
-/* Fieldset styling for student details form */
-fieldset {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-legend {
-    font-weight: bold;
-    color: #333;
-}
-
-a.button {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-}
-
-/* Styling for student info section */
-.student-info p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-}
-
-.student-info p strong {
-    color: #34495e;
-}
-
-.student-info p span {
-    color: #7f8c8d;
-}
-
-.error-message {
-    text-align: center;
-    color: #e74c3c;
-    font-size: 1.2em;
+a.button:hover {
+    background-color: #45a049;
 }

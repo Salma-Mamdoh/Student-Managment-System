@@ -50,4 +50,29 @@ public class Student {
     public String getStudentID() {
         return this.id;
     }
+
+    public void setFirstName(String firstName) {
+        this.firstName=firstName;
+    }
+
+
+    public void setLastName(String lastName) {
+        this.lastName=lastName;
+    }
+
+    public void setGender(String gender) {
+        this.gender=gender;
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa=gpa;
+    }
+
+    public void setLevel(int level) {
+        this.level=level;
+    }
+
+    public void setAddress(String address) {
+        this.address=address;
+    }
 }

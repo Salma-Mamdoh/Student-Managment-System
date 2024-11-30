@@ -1,13 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: E.J.S
-  Date: 11/9/2024
-  Time: 7:56 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <title>Student Information</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style2.css">
 
 <html>
 <head>
@@ -18,11 +11,15 @@
     <h2>Student Details</h2>
 
     <%
-        // Check if the "students" attribute is null or empty
+        // Retrieve the "students" attribute from the request
         java.util.List<com.studentApp.Model.Student> students = (java.util.List<com.studentApp.Model.Student>) request.getAttribute("students");
-
-        if (students != null && !students.isEmpty()) {
     %>
+
+    <% if (students != null && !students.isEmpty()) { %>
+    <div class="result-summary">
+        <p><strong>Number of Students Found:</strong> <%= students.size() %></p>
+    </div>
+
     <div class="student-info">
         <fieldset>
             <legend>Students Found</legend>
@@ -40,7 +37,7 @@
     </div>
     <% } else { %>
     <div class="error-message">
-        <p>Student not found.</p>
+        <p>No students were found matching the criteria.</p>
     </div>
     <% } %>
 

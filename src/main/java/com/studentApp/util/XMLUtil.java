@@ -25,19 +25,14 @@ public class XMLUtil {
             }
         }
 
-        // Create an empty XML structure with a root element
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
         Document doc = docBuilder.newDocument();
-
         Element rootElement = doc.createElement("University");
         doc.appendChild(rootElement);
-
-        // Write the empty document to the file
         writeDocumentToFile(doc, file);
     }
 
-    // Read students from XML file
     public static University readStudentsFromXML(String filePath) throws Exception {
         File xmlFile = new File(filePath);
         if (!xmlFile.exists()) {
@@ -47,7 +42,7 @@ public class XMLUtil {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
         Document doc = docBuilder.parse(xmlFile);
-        doc.getDocumentElement().normalize(); // Normalize the XML structure
+        doc.getDocumentElement().normalize();
 
         University university = new University();
         NodeList studentList = doc.getElementsByTagName("Student");
@@ -76,7 +71,7 @@ public class XMLUtil {
     public static void saveStudentsToXML(String filePath, University university) throws Exception {
         File xmlFile = new File(filePath);
 
-        // Prepare document structure
+
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
         Document doc = docBuilder.newDocument();
@@ -116,11 +111,11 @@ public class XMLUtil {
             rootElement.appendChild(studentElement);
         }
 
-        // Save the document to XML file with pretty print
+
         writeDocumentToFile(doc, xmlFile);
     }
 
-    // Helper method to write document to file with pretty print
+
     private static void writeDocumentToFile(Document doc, File file) throws TransformerException {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
