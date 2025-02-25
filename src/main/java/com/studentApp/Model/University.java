@@ -40,7 +40,7 @@ public class University {
     public List<Student> findStudentsByFirstName(String firstName) {
         List<Student> result = new ArrayList<>();
         for (Student student : students) {
-            if (student.getFirstName().equalsIgnoreCase(firstName)) {
+            if (student.getFirstName().equalsIgnoreCase(firstName.toLowerCase())) {
                 result.add(student);
             }
         }
@@ -50,7 +50,7 @@ public class University {
     public List<Student> findStudentsByLastName(String lastName) {
         List<Student> result = new ArrayList<>();
         for (Student student : students) {
-            if (student.getLastName().equalsIgnoreCase(lastName)) {
+            if (student.getLastName().equalsIgnoreCase(lastName.toLowerCase())) {
                 result.add(student);
             }
         }
@@ -126,11 +126,6 @@ public class University {
         }
     }
 
-    public boolean isValidAddress(String address) {
-        // Regex for valid addresses: allows alphanumeric characters, spaces, commas, periods, and dashes
-        return address != null && address.matches("[a-zA-Z0-9\\s,.-]+");
-    }
-
 
     public boolean isValidStudentID(String studentIDStr) {
         if (studentIDStr != null && !studentIDStr.trim().isEmpty()) {
@@ -164,7 +159,7 @@ public class University {
         }
 
         // Validate address
-        if (!isValidAddress(address)) {
+        if (!isValidString(address)) {
             errorMessages.add("Invalid Address.");
         }
 

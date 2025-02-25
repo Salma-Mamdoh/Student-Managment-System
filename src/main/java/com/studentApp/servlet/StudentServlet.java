@@ -297,12 +297,26 @@ public class StudentServlet extends HttpServlet {
     }
 
     private void sortByID(List<Student> students, String sortOrder) {
-        if ("ascending".equals(sortOrder)) {
-            students.sort(Comparator.comparing(Student::getStudentID));
-        } else {
-            students.sort(Comparator.comparing(Student::getStudentID).reversed());
+        if ("ascending".equalsIgnoreCase(sortOrder)) {
+            students.sort(Comparator.comparingLong(student -> {
+                try {
+                    return Long.parseLong(student.getStudentID());
+                } catch (NumberFormatException e) {
+                    return Long.MIN_VALUE; // or handle as needed
+                }
+            }));
+        } else if ("descending".equalsIgnoreCase(sortOrder)) {
+            students.sort((student1, student2) -> {
+                try {
+                    return Long.compare(Long.parseLong(student2.getStudentID()), Long.parseLong(student1.getStudentID()));
+                } catch (NumberFormatException e) {
+                    return 1; // or handle as needed
+                }
+            });
         }
     }
+
+
 
     // Sorting by First Name
     private void sortByFirstName(List<Student> students, String sortOrder) {

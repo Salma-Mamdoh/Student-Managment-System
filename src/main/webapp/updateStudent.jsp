@@ -60,8 +60,8 @@
             }
 
             // Validate address (example: not empty)
-            if (address === "") {
-                errorMessage += "Address cannot be empty.\n";
+            if (address === "" || !/^[A-Za-z\s]+$/.test(address)) {
+                errorMessage += "invalid Address.\n";
                 isValid = false;
             }
 

@@ -53,7 +53,7 @@
                 }
 
                 // Validate Address (alphanumeric with spaces and punctuation)
-                if (!/^[a-zA-Z0-9\s,.-]+$/.test(address)) {
+                if (!/^[a-zA-Z\s,.-]+$/.test(address)) {
                     alert("Address for student " + i + " contains invalid characters.");
                     return false;
                 }
